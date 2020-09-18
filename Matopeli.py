@@ -2,17 +2,18 @@ import turtle
 import random
 
 class Mato():
-    mato = turtle.Turtle()
-    mato.speed(0)
-    mato.shape("circle")
-    mato.color("green")
-    mato.penup()
-    mato.goto(0, 0)
-    dx = 20
-    dy = 0
+    def __init__(self):
+        self.mato = turtle.Turtle()
+        self.mato.speed(0)
+        self.mato.shape("circle")
+        self.mato.color("green")
+        self.mato.penup()
+        self.mato.goto(0, 0)
+        self.dx = 20
+        self.dy = 0
 
-    madon_osat = []
-    madon_osat.append(mato)
+        self.madon_osat = []
+        self.madon_osat.append(self.mato)
 
 
     def mato_oikealle(self):
